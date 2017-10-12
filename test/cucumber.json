@@ -1,0 +1,59 @@
+[
+  {
+    "comments": [
+      {
+        "value": "#encoding: utf-8",
+        "line": 1
+      }
+    ],
+    "keyword": "Feature",
+    "name": "Confirm presence of text.",
+    "line": 3,
+    "description": "  As a user\n  I should be able to see the welcome text",
+    "id": "confirm-presence-of-text.",
+    "uri": "features\\demo.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "name": "Page says 'Hello, world.'",
+        "line": 8,
+        "description": "",
+        "id": "confirm-presence-of-text.;page-says-'hello,-world.'",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the site",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/demo_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1747175000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see the text \"Hello, world.\"",
+            "line": 10,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 23,
+                  "val": "Hello, world."
+                }
+              ],
+              "location": "features/step_definitions/demo_steps.rb:5"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "expected \"Hello, everyone!!!\" to include \"Hello, world.\" (RSpec::Expectations::ExpectationNotMetError)\n./features/step_definitions/demo_steps.rb:6:in `/^I should see the text \"([^\"]*)\"$/'\nfeatures\\demo.feature:10:in `Then I should see the text \"Hello, world.\"'",
+              "duration": 263027000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
