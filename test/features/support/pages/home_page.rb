@@ -17,6 +17,6 @@
 class HomePage
 	include PageObject
 	
-	page_url("http://dev-server:8080/ucd-demo-ui/greeting.html")
+	page_url("http://dev-server:8080/hello-ui/greeting.html")
 	
 end
