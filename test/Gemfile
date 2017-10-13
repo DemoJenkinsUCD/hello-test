@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-source 'http://rubygems.org'
+source 'http://gem:gem@gem-server:9292'
 
 group :test do
   gem 'cucumber', '>= 2.4.0'
